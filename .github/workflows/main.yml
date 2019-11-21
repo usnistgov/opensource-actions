@@ -2,7 +2,7 @@ name: Scheduled Data Update
 
 on:
   schedule:
-  - cron: "56 0 * * *"
+  - cron: "5 8 * * *"
 
 jobs:
   runDataUpdate:
