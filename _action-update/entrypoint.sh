@@ -33,8 +33,12 @@ git merge --no-edit master
 OLD_END=$(cat $ACT_LOG_PATH | grep END | cut -f 2)
 OLD_END=$(date --date="$OLD_END" "+%s")
 
-# Run MASTER script
 cd $REPO_ROOT/_explore/scripts
+
+# Install python dependencies
+pip install -r requirements.txt
+
+# Run MASTER script
 ./MASTER.sh
 cd $REPO_ROOT
 git add -A .
