@@ -10,6 +10,7 @@ hub version
 export GITHUB_API_TOKEN=$BOT_TOKEN
 
 ACT_LOG_PATH=_explore/LAST_MASTER_UPDATE.txt
+ACT_INPUT_PATH=_explore
 ACT_DATA_PATH=explore/github-data
 
 DATA_TIMESTAMP=$(date -u "+%F-%H")
@@ -78,7 +79,7 @@ fi
 #   All changes are to valid files only
 git diff --name-only HEAD
 CHANGE_COUNT=$(git diff --name-only HEAD | grep -c -E ".+")
-VALID_COUNT=$(git diff --name-only HEAD | grep -c -E "(^${ACT_DATA_PATH}\/\S+\.json$)|(${ACT_LOG_PATH})")
+VALID_COUNT=$(git diff --name-only HEAD | grep -c -E "(^${ACT_DATA_PATH}\/\S+\.json$)|(^${ACT_INPUT_PATH}\/input\S+\.json$)|(${ACT_LOG_PATH})")
 if [ "$CHANGE_COUNT" -ne "$VALID_COUNT" ]
     then
         echo "UPDATE FAILED - Unexpected file changes"
