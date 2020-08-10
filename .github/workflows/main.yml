@@ -25,3 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run Data Update
       uses: ./_action-update
+      env:
+        BRANCH_NAME: master
+        BOT_USER: usnistgov
+        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
