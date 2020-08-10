@@ -4,14 +4,17 @@ name: Scheduled Data Update
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  schedule:
-  - cron: "5 8 * * *"
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   runDataUpdate:
     # The type of runner that the job will run on
+    name: Run Data Update
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
