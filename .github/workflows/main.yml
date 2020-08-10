@@ -14,5 +14,5 @@ jobs:
       uses: ./_action-update
       env:
         BRANCH_NAME: master
-        BOT_USER: lc-bot
+        BOT_USER: usnistgov
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
