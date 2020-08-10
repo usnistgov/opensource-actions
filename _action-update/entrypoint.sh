@@ -22,8 +22,8 @@ git config --global user.email "${BOT_USER}@users.noreply.github.com"
 git config --global hub.protocol https
 
 # Get latest copy of repository
-git clone --shallow-since=$CLONE_CUTOFF --no-single-branch "https://${BOT_USER}:${BOT_TOKEN}@github.com/LLNL/llnl.github.io.git"
-cd llnl.github.io
+git clone --shallow-since=$CLONE_CUTOFF --no-single-branch "https://${BOT_USER}:${BOT_TOKEN}@github.com/usnistgov/opensource.git"
+cd opensource
 REPO_ROOT=$(pwd)
 
 # Checkout data update branch, creating new if necessary
