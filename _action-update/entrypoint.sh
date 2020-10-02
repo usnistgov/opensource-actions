@@ -22,7 +22,7 @@ git config --global user.email "${BOT_USER}@users.noreply.github.com"
 git config --global hub.protocol https
 
 # Get latest copy of repository
-git clone --shallow-since=$CLONE_CUTOFF --no-single-branch "https://${BOT_USER}:${BOT_TOKEN}@github.com/usnistgov/opensource.git"
+git clone --no-single-branch "https://${BOT_USER}:${BOT_TOKEN}@github.com/usnistgov/opensource.git"
 cd opensource
 REPO_ROOT=$(pwd)
 
