@@ -93,6 +93,10 @@ git pull
 git commit -m "${DATA_TIMESTAMP} Data Update by ${BOT_USER}"
 git push origin $BRANCH_NAME
 
+### MERGE TO NIST-PAGES
+git checkout nist-pages
+git merge master
+
 # Create pull request, or list existing
 # hub pull-request --no-edit --message "Data Update by ${BOT_USER}" || hub pr list --state open --head $BRANCH_NAME
 
