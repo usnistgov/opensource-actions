@@ -37,12 +37,12 @@ OLD_END=$(date --date="$OLD_END" "+%s")
 cd $REPO_ROOT/_explore/scripts
 
 # Install python dependencies
-pip install -r requirements.txt
+#pip install -r requirements.txt
 
 # Run MASTER script
-./MASTER.sh
-cd $REPO_ROOT
-git add -A .
+#./MASTER.sh
+#cd $REPO_ROOT
+#git add -A .
 
 ### VALIDATE UPDATE ###
 
@@ -95,7 +95,7 @@ git push origin $BRANCH_NAME
 
 ### MERGE TO NIST-PAGES
 git checkout nist-pages
-git merge master
+git merge master --strategy-option ours
 
 git add -A .
 git commit -m "${DATA_TIMESTAMP} Data Merge to ${BOT_USER}"
