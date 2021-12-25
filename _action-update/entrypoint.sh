@@ -37,12 +37,12 @@ OLD_END=$(date --date="$OLD_END" "+%s")
 cd $REPO_ROOT/_explore/scripts
 
 # Install python dependencies
-#pip install -r requirements.txt
+pip install -r requirements.txt
 
 # Run MASTER script
-#./MASTER.sh
-#cd $REPO_ROOT
-#git add -A .
+./MASTER.sh
+cd $REPO_ROOT
+git add -A .
 
 ### VALIDATE UPDATE ###
 
