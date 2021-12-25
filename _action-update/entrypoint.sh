@@ -98,7 +98,7 @@ git checkout nist-pages
 git merge master --strategy-option ours
 
 #git add -A .
-git commit -m "${DATA_TIMESTAMP} Data Merge to ${BOT_USER}"
+#git commit -m "${DATA_TIMESTAMP} Data Merge to ${BOT_USER}"
 git push origin nist-pages
 
 # Create pull request, or list existing
