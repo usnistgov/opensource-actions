@@ -21,6 +21,6 @@ git config --global user.name "${BOT_USER}"
 git config --global user.email "${BOT_USER}@users.noreply.github.com"
 git config --global hub.protocol https
 
-git config --global user
+git config --list
 
 exit 0
