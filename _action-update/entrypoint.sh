@@ -99,7 +99,7 @@ git merge master --strategy-option ours
 
 #git add -A .
 #git commit -m "${DATA_TIMESTAMP} Data Merge to ${BOT_USER}"
-git push --force origin nist-pages
+git push origin nist-pages
 
 # Create pull request, or list existing
 # hub pull-request --no-edit --message "Data Update by ${BOT_USER}" || hub pr list --state open --head $BRANCH_NAME
