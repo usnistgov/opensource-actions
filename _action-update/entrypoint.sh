@@ -95,6 +95,7 @@ git push origin $BRANCH_NAME
 
 ### MERGE TO NIST-PAGES
 git checkout nist-pages
+git pull origin nist-pages
 git merge master --strategy-option ours
 
 #git add -A .
