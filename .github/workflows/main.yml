@@ -10,6 +10,8 @@ name: Scheduled Data Update
 #  pull_request:
 #    branches: [ master ]
 
+# TRIGGER
+
 on:
   push:
     branches: [ master ]
