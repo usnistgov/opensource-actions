@@ -10,7 +10,7 @@ name: Scheduled Data Update
 #  pull_request:
 #    branches: [ master ]
 
-# RESTART TRIGGER AGAIN 11/09/2023
+# RESTART TRIGGER AGAIN 04/02/2024
 
 on:
   push:
