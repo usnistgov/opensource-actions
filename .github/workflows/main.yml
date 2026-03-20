@@ -11,7 +11,7 @@ name: Scheduled Data Update
 #    branches: [ master ]
 
 # RESTART TRIGGER AGAIN 03/05/2025
-
+# Restart Trigger manually 03/20/2026
 on:
   push:
     branches: [ master ]
