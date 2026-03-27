@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:bullseye-slim
 
 LABEL "com.github.actions.name"="Run Data Update"
 LABEL "com.github.actions.description"="Run the complete MASTER data update."
